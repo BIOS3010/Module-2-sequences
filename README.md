@@ -20,7 +20,7 @@ my_seq = Seq("AGTACACTGGT")
 
 **4. Test the .transcribe() method**
 ```python
-my_seq.translate()
+my_seq.transcribe()
 ```
 ```diff
 ! Explain what the `.transcribe()` method above does on a Seq object
