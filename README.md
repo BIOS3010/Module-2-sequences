@@ -48,6 +48,6 @@ my_seq2.complement()
 **6. Downloading some actual data (FASTA) and reading into Seq object**
 ```python
 from Bio import SeqIO
-seq_record = SeqIO.read("/Users/jonaspau/Downloads/sequence.fasta", "fasta")
+seq_record = SeqIO.read("sequence.fasta", "fasta")
 hbb = seq_record.seq
 ```
