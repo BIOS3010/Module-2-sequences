@@ -60,3 +60,8 @@ hbb = seq_record.seq
 ! Compare with the amino acid sequence on NCBI, is this as expected?
 ! Advanced: Use python string slicing on `hbb` to explore the translation further
 ```
+**7. Reading a FASTA-file containing multiple sequences into Seq objects**
+TBD.
+```python
+```
+
