@@ -26,8 +26,10 @@ my_seq.transcribe()
 ! Explain what the `.transcribe()` method above does on a Seq object
 ! What is the difference between a method and a function?
 ```
+**X. .reverse() and .reverse_complenet() ...**
+- Compare with what we learned in class
 
-**5. And so on ...**
+**X. And so on ...**
 
 **X. Working with FASTA format**
 
