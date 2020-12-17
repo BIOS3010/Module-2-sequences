@@ -13,13 +13,12 @@ from Bio.Seq import Seq
 ```python
 my_seq = Seq("AGTACACTGGT")
 ```
-
 ```diff
-! Test the python function `len` on the `my_seq` 
+! Test the python function `len` on the `my_seq`, is it working in the same way as before?
 ! What is the purpose of a Seq object? Why not just use a string?
 ```
 
-4. 
+4. Test the .transcribe() method
 ```python
 my_seq.translate()
 ```
@@ -27,3 +26,5 @@ my_seq.translate()
 ! Explain what the `.transcribe()` method above does on a Seq object
 ! What is the difference between a method and a function?
 ```
+
+4. And so on
