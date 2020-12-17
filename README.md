@@ -27,14 +27,16 @@ my_seq.transcribe()
 ! What is the difference between a method and a function?
 ```
 
-**X. .reverse() and .reverse_complement() ...**
+**X. .complement() and .reverse_complement() ...**
 ```python
-my_seq.reverse()
+my_seq.complement()
+my_seq.reverse_complement()
 my_seq2 = Seq("AGYCCTD")
-my_seq2.reverse()
+my_seq2.complement()
 ```
 ```diff
 ! Explain what what happens with `my_seq` and `my_seq2`
+! Refer back to the lecture slides if you have forgotten about (reverse) complementarity
 ```
 
 - Compare with what we learned in class
