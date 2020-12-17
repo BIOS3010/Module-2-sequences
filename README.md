@@ -41,9 +41,16 @@ my_seq2.complement()
 
 - Compare with what we learned in class
 
-**X. And so on ...**
+**X. .find() to search for sequences**
+TBD.
+```python
+```
+**X. .count() to count occurences of sequences**
+TBD.
+```python
+```
 
-**X. Working with FASTA format**
+**X. Working with FASTA format with SeqIO**
 
 **6. Downloading some actual data (FASTA) and reading into Seq object**
 - Go to NCBI - Gene: https://www.ncbi.nlm.nih.gov/gene/
@@ -64,4 +71,6 @@ hbb = seq_record.seq
 TBD.
 ```python
 ```
+
+
 
