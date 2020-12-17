@@ -71,6 +71,10 @@ hbb = seq_record.seq
 TBD.
 ```python
 ```
+```diff
+! Loop through sequences and search for start codons
+! Loop through sequences and count the occurence of 'GC'
+```
 
 
 
