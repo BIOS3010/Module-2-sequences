@@ -28,3 +28,5 @@ my_seq.translate()
 ```
 
 **5. And so on ...**
+
+**6. Downloading some actual data and reading into Seq object**
