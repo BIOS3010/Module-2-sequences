@@ -1,15 +1,15 @@
 # Module-2-sequences
-1. Install Biopython
+**1. Install Biopython**
 Show here
 
-2. Load Biopython
+**2. Load Biopython**
 
 ```python
 import Bio
 from Bio.Seq import Seq
 ```
 
-3. Create Seq object
+**3. Create Seq object**
 ```python
 my_seq = Seq("AGTACACTGGT")
 ```
@@ -18,7 +18,7 @@ my_seq = Seq("AGTACACTGGT")
 ! What is the purpose of a Seq object? Why not just use a string?
 ```
 
-4. Test the .transcribe() method
+**4. Test the .transcribe() method**
 ```python
 my_seq.translate()
 ```
@@ -27,4 +27,4 @@ my_seq.translate()
 ! What is the difference between a method and a function?
 ```
 
-4. And so on
+**5. And so on ...**
