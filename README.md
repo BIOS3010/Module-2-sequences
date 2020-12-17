@@ -46,8 +46,15 @@ my_seq2.complement()
 **X. Working with FASTA format**
 
 **6. Downloading some actual data (FASTA) and reading into Seq object**
+- Go to NCBI - Gene: https://www.ncbi.nlm.nih.gov/gene/
+- Search for the human beta globin gene (HBB)
+- Download the HBB gene in FASTA format and save it on your computer as "sequence.fasta"
+- Load this FASTA file into a Seq object called `hbb`:
 ```python
 from Bio import SeqIO
 seq_record = SeqIO.read("sequence.fasta", "fasta")
 hbb = seq_record.seq
 ```
+! Translate the sequence into the corresponding amino acid sequence. 
+! Compare with the amino acid sequence on NCBI, is this as expected?
+@ Advanced: use python string slicing on `hbb` to explore the translation further
