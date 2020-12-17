@@ -26,7 +26,17 @@ my_seq.transcribe()
 ! Explain what the `.transcribe()` method above does on a Seq object
 ! What is the difference between a method and a function?
 ```
+
 **X. .reverse() and .reverse_complement() ...**
+```python
+my_seq.reverse()
+my_seq2 = Seq("AGYCCTD")
+my_seq2.reverse()
+```
+```diff
+! Explain what what happens with `my_seq` and `my_seq2`
+```
+
 - Compare with what we learned in class
 
 **X. And so on ...**
