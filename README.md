@@ -55,6 +55,8 @@ from Bio import SeqIO
 seq_record = SeqIO.read("sequence.fasta", "fasta")
 hbb = seq_record.seq
 ```
+```diff
 ! Translate the sequence into the corresponding amino acid sequence. 
 ! Compare with the amino acid sequence on NCBI, is this as expected?
-@ Advanced: use python string slicing on `hbb` to explore the translation further
+@ Advanced: use python string slicing on `hbb` to explore the translation further*
+```
