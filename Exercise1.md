@@ -136,7 +136,7 @@ for gene in all_genes:
 
 ```diff
 ! Print the protein length (number of amino acids) of each gene
-! Calculate the average gene length (number of amino acids)
+! Calculate the average protein length (number of amino acids)
 ```
 
 
