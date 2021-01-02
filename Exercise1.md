@@ -60,26 +60,38 @@ my_seq2.complement()
 **X. .find() to search for sequences**
 TBD.
 ```python
+my_rna = Seq("GUCAUGGCCAUUGUAAUGGGCCGCUGAAAGGGUGCCCGAUAGUUG")
+my_rna.find("AUG")
 ```
+
 **X. .count() to count occurences of sequences**
 TBD.
 ```python
+my_rna.count("AUG")
 ```
+```diff
+! Make a Seq object with the sequence "AAAA"
+! Count the occurence of "AA" in this object
+! Explain what happened
+```
+
 **X. Test the .transcribe() method**
 ```python
 my_seq.transcribe()
 ```
 ```diff
-! Explain what the `.transcribe()` method above does on a Seq object
 ! What is the difference between a method and a function?
+! Explain what the `.transcribe()` method above does on a Seq object
+! What happens if you try to transcribe `my_rna`?
 ```
 
 **X. Test the .translate() method**
 ```python
-my_seq.translate()
+my_rna.translate()
 ```
 ```diff
 ! Explain what the `.translate()` method above does on a Seq object
+! Explain what happens if you translate the `my_seq`
 ```
 
 **X. Working with FASTA format with SeqIO**
