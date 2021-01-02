@@ -114,21 +114,27 @@ hbb = seq_record.seq
 ! Compare with the amino acid sequence on NCBI, is this as expected?
 ! Advanced: Use python string slicing on `hbb` to explore the translation further
 ```
-**7. Reading a FASTA-file containing multiple sequences into Seq objects
-- Go to the UCSC Table Browser: https://genome-euro.ucsc.edu/cgi-bin/hgTables
-- TBD: Procedure to select genes here
-- Select `output format:` sequence
-- In the `Output file:` field, type in: "allgenes.fasta"
+**7. Reading a FASTA-file containing multiple sequences into Seq objects**
+```diff
+! Download the DNA sequence of all human genes:
+```
+- Go to: https://genome-euro.ucsc.edu/cgi-bin/hgTables?hgsid=250654185_KikUKaMDmiGmkTgDVb2wBpVbjc9K&clade=mammal&org=Human&db=hg19&hgta_group=genes&hgta_track=knownGene&hgta_table=knownGene&hgta_regionType=genome&position=chrX%3A15%2C578%2C261-15%2C621%2C068&hgta_outputType=sequence&hgta_outFileName=all_genes.fasta
 - Click "get output"
 - Select "Genomic" and click "Submit"
 - Unselect "5' UTR Exons", "3' UTR Exons", and "Introns" so that only "CDS Exons" is selected
 - Click "get sequence"
-TBD.
+
+To loop through all the genes and print the sequence (Seq object), one can do this:
+
 ```python
+all_genes = SeqIO.parse("genes_all.fa", "fasta")
+
+for gene in all_genes:
+    print(gene.seq)    
 ```
+
 ```diff
-! Loop through sequences and search for start codons
-! Loop through sequences and count the occurence of 'GC'
+! Print the protein length (number of amino acids) of each gene
 ```
 
 
