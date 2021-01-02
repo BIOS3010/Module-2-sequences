@@ -114,10 +114,15 @@ hbb = seq_record.seq
 ! Compare with the amino acid sequence on NCBI, is this as expected?
 ! Advanced: Use python string slicing on `hbb` to explore the translation further
 ```
-**7. Reading a FASTA-file containing multiple sequences into Seq objects**
-- Download the FASTA file of "human myoglobin" in NCBI - Gene
-- Create a new FASTA file containing both the HBB sequence and the myglobin sequence
-
+**7. Reading a FASTA-file containing multiple sequences into Seq objects
+- Go to the UCSC Table Browser: https://genome-euro.ucsc.edu/cgi-bin/hgTables
+- TBD: Procedure to select genes here
+- Select `output format:` sequence
+- In the `Output file:` field, type in: "allgenes.fasta"
+- Click "get output"
+- Select "Genomic" and click "Submit"
+- Unselect "5' UTR Exons", "3' UTR Exons", and "Introns" so that only "CDS Exons" is selected
+- Click "get sequence"
 TBD.
 ```python
 ```
