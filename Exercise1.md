@@ -123,7 +123,7 @@ hbb = seq_record.seq
 - Select "Genomic" and click "Submit"
 - Unselect "5' UTR Exons", "3' UTR Exons", and "Introns" so that only "CDS Exons" is selected
 - Click "get sequence"
-- Save the `all_genes.fasta` file in your current working directory
+- Save the `all_genes.fasta` file in your current working directory (Warning: the file is 105.3 MB)
 
 To loop through all the genes and print the sequence (Seq object), one can do this:
 
