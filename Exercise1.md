@@ -123,6 +123,7 @@ hbb = seq_record.seq
 - Select "Genomic" and click "Submit"
 - Unselect "5' UTR Exons", "3' UTR Exons", and "Introns" so that only "CDS Exons" is selected
 - Click "get sequence"
+- Save the `all_genes.fasta` file in your current working directory
 
 To loop through all the genes and print the sequence (Seq object), one can do this:
 
@@ -135,6 +136,7 @@ for gene in all_genes:
 
 ```diff
 ! Print the protein length (number of amino acids) of each gene
+! Calculate the average gene length (number of amino acids)
 ```
 
 
