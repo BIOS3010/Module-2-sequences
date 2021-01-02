@@ -115,6 +115,9 @@ hbb = seq_record.seq
 ! Advanced: Use python string slicing on `hbb` to explore the translation further
 ```
 **7. Reading a FASTA-file containing multiple sequences into Seq objects**
+- Download the FASTA file of "human myoglobin" in NCBI - Gene
+- Create a new FASTA file containing both the HBB sequence and the myglobin sequence
+
 TBD.
 ```python
 ```
