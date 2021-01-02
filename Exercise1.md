@@ -116,7 +116,7 @@ hbb = seq_record.seq
 ```
 **7. Reading a FASTA-file containing multiple sequences into Seq objects**
 
-Start by download the coding DNA sequence of all human genes in FASTA format.
+Start by download the coding DNA sequence of all human genes in FASTA format:
 
 - Go to the UCSC Table Browser: https://genome-euro.ucsc.edu/cgi-bin/hgTables?hgsid=250654185_KikUKaMDmiGmkTgDVb2wBpVbjc9K&clade=mammal&org=Human&db=hg19&hgta_group=genes&hgta_track=knownGene&hgta_table=knownGene&hgta_regionType=genome&position=chrX%3A15%2C578%2C261-15%2C621%2C068&hgta_outputType=sequence&hgta_outFileName=all_genes.fasta
 - Inspect the options that are selected
