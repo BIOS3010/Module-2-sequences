@@ -42,14 +42,6 @@ my_seq = Seq("AGTACACTGGT")
 ! Try to see if you manage to convert the Seq-object to a string (without reading any documentation). 
 ```
 
-**4. Test the .transcribe() method**
-```python
-my_seq.transcribe()
-```
-```diff
-! Explain what the `.transcribe()` method above does on a Seq object
-! What is the difference between a method and a function?
-```
 
 **X. .complement() and .reverse_complement() ...**
 ```python
@@ -72,6 +64,22 @@ TBD.
 **X. .count() to count occurences of sequences**
 TBD.
 ```python
+```
+**X. Test the .transcribe() method**
+```python
+my_seq.transcribe()
+```
+```diff
+! Explain what the `.transcribe()` method above does on a Seq object
+! What is the difference between a method and a function?
+```
+
+**X. Test the .translate() method**
+```python
+my_seq.translate()
+```
+```diff
+! Explain what the `.translate()` method above does on a Seq object
 ```
 
 **X. Working with FASTA format with SeqIO**
