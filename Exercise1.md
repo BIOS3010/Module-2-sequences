@@ -62,6 +62,9 @@ TBD.
 ```python
 my_rna = Seq("GUCAUGGCCAUUGUAAUGGGCCGCUGAAAGGGUGCCCGAUAGUUG")
 my_rna.find("AUG")
+my_rna.find("UAG")
+my_rna.find("UAA")
+my_rna.find("UGA")
 ```
 
 **X. .count() to count occurences of sequences**
