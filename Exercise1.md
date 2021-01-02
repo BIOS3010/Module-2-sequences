@@ -115,14 +115,14 @@ hbb = seq_record.seq
 ! Advanced: Use python string slicing on `hbb` to explore the translation further
 ```
 **7. Reading a FASTA-file containing multiple sequences into Seq objects**
-```diff
-! Download the DNA sequence of all human genes:
-```
+Start by download the coding DNA sequence of all human genes in FASTA format.
+
 - Go to: https://genome-euro.ucsc.edu/cgi-bin/hgTables?hgsid=250654185_KikUKaMDmiGmkTgDVb2wBpVbjc9K&clade=mammal&org=Human&db=hg19&hgta_group=genes&hgta_track=knownGene&hgta_table=knownGene&hgta_regionType=genome&position=chrX%3A15%2C578%2C261-15%2C621%2C068&hgta_outputType=sequence&hgta_outFileName=all_genes.fasta
-- Click "get output"
-- Select "Genomic" and click "Submit"
-- Unselect "5' UTR Exons", "3' UTR Exons", and "Introns" so that only "CDS Exons" is selected
-- Click "get sequence"
+- Inspect the options that are selected
+- Click `get output`
+- Select `Genomic` and click Submit`
+- Select only `CDS Exons` ("5' UTR Exons", "3' UTR Exons", and "Introns" should be unselected)
+- Click `get sequence"`
 - Save the `all_genes.fasta` file in your current working directory (Warning: the file is 105.3 MB)
 
 To loop through all the genes and print the sequence (Seq object), one can do this:
