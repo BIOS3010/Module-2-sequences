@@ -28,7 +28,7 @@ from Bio.Seq import Seq
 
 A few notes:
 * When importing stuff in Python, we usually put the import statement at the top of the file. This makes what we have imported available in the whole file, and it makes it easy to get an overview of everything that is imported when all import statements are togheter at top of the file.
-* The statement `from Bio.seq import Seq` makes the `Seq` class available to us. An alternative way of importing, that you may have seen is `import Bio`. That makes the `Seq`-class available through `Bio.Seq`.
+* The statement `from Bio.Seq import Seq` makes the `Seq` class available to us. An alternative way of importing, that you may have seen is `import Bio`. That makes the `Seq`-class available through `Bio.Seq`.
 
 **3. Create Seq object**
 
@@ -43,102 +43,44 @@ my_seq = Seq("AGTACACTGGT")
 ```
 
 
-**X. .complement() and .reverse_complement() ...**
+**3. .complement() and .reverse_complement() ...**
+
+By calling the `complement()` or `reverse_complement()` methods on the Seq-object, we can get the complement or reverse complement of a sequence:
 ```python
-my_seq.complement()
-my_seq.reverse_complement()
-my_seq2 = Seq("AGYCCTD")
-my_seq2.complement()
+my_seq_complement = my_seq.complement()
+my_seq_reverse_complement = my_seq.reverse_complement()
 ```
 ```diff
-! Explain what what happens with `my_seq` and `my_seq2`
+! Run the code above and also print the two new sequence `my_seq_complement` and `my_seq_reverse_complement`. Is the result as expected?
+! Is the original variable `my_seq` changed in any way? 
 ! Refer back to the lecture slides if you have forgotten about (reverse) complementarity
 ```
 
 - Compare with what we learned in class
 
-**X. .find() to search for sequences**
-TBD.
-```python
-my_rna = Seq("GUCAUGGCCAUUGUAAUGGGCCGCUGAAAGGGUGCCCGAUAGUUG")
-my_rna.find("AUG")
-my_rna.find("UAG")
-my_rna.find("UAA")
-my_rna.find("UGA")
+**4. .find() to search for sequences**
+
+Bipython also makes it easy to find a subsequence within a sequence by using the `find`-method. This method takes one argument (the subsequence to be found).
+
+```diff
+! Defining a new Biopython sequence (you can choose what the sequence should be)
+! Use the `find()` method to find the location of a subsequence. Remember that you use methods on the sequence object by using the `some_sequence.some_method()`-notation. Store the result in a variable and print that variable to see the location.
+! What happens if the subsequence you try to find does not exist in the sequence?
+! What happens if the subsequence exists multiple times?
 ```
 
-**X. .count() to count occurences of sequences**
-TBD.
-```python
-my_rna.count("AUG")
-```
-```diff
-! Make a Seq object with the sequence "AAAA"
-! Count the occurence of "AA" in this object
-! Explain what happened
-```
 
-**X. Test the .transcribe() method**
-```python
-my_seq.transcribe()
-```
-```diff
-! What is the difference between a method and a function?
-! Explain what the `.transcribe()` method above does on a Seq object
-! What happens if you try to transcribe `my_rna`?
-```
+**5. Other methods**
 
-**X. Test the .translate() method**
-```python
-my_rna.translate()
-```
+In addition to the methods introduced above, the Seq-object has other methods that can be used:
+* `sequence.count(subsequence)`: Returns the number of times subsequence occurs in the sequence
+* `sequence.transcribe()`: Transcribes the sequence from DNA til RNA
+* `sequence.translate()`: Translates from DNA to RNA
+
 ```diff
-! Explain what the `.translate()` method above does on a Seq object
-! Explain what happens if you translate the `my_seq`
+! Play around with these methods to see how they work
+! What happens if you try to transcribe an RNA sequence or translate a DNA sequence?
 ```
 
 **X. Working with FASTA format with SeqIO**
-
-**6. Downloading some actual data (FASTA) and reading into Seq object**
-- Go to NCBI - Gene: https://www.ncbi.nlm.nih.gov/gene/
-- Search for the human beta globin gene (HBB)
-- Download the HBB gene in FASTA format and save it on your computer as "sequence.fasta"
-- Load this FASTA file into a Seq object called `hbb`:
-```python
-from Bio import SeqIO
-seq_record = SeqIO.read("sequence.fasta", "fasta")
-hbb = seq_record.seq
-```
-```diff
-! Translate the sequence into the corresponding amino acid sequence. 
-! Compare with the amino acid sequence on NCBI, is this as expected?
-! Advanced: Use python string slicing on `hbb` to explore the translation further
-```
-**7. Reading a FASTA-file containing multiple sequences into Seq objects**
-
-Start by download the coding DNA sequence of all human genes in FASTA format:
-
-- Go to the UCSC Table Browser: https://genome-euro.ucsc.edu/cgi-bin/hgTables?hgsid=250654185_KikUKaMDmiGmkTgDVb2wBpVbjc9K&clade=mammal&org=Human&db=hg19&hgta_group=genes&hgta_track=knownGene&hgta_table=knownGene&hgta_regionType=genome&position=chrX%3A15%2C578%2C261-15%2C621%2C068&hgta_outputType=sequence&hgta_outFileName=all_genes.fasta
-- Inspect the options that are selected
-- Click `get output`
-- Select `Genomic` and click Submit`
-- Select only `CDS Exons` ("5' UTR Exons", "3' UTR Exons", and "Introns" should be unselected)
-- Click `get sequence"`
-- Save the `all_genes.fasta` file in your current working directory (Warning: the file is 105.3 MB)
-
-To loop through all the genes and print the sequence (Seq object), one can do this:
-
-```python
-all_genes = SeqIO.parse("genes_all.fa", "fasta")
-
-for gene in all_genes:
-    print(gene.seq)    
-```
-
-```diff
-! Print the protein length (number of amino acids) of each gene
-! Calculate the average protein length (number of amino acids)
-```
-
-
 
