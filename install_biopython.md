@@ -2,7 +2,7 @@
 
 The easiest way to install Biopython is to use the builtin Python package manageer (PiP).
 
-If you have Python installed on your system, you usually also have PiP installed as a module, and can install Biopython using this command:
+If you have Python installed on your system, you usually also have PiP installed as a module, and can install Biopython executing this command in the terminal:
 
 ```
 python3 -m pip install biopython
