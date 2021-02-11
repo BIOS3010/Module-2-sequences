@@ -16,7 +16,7 @@ number_of_a = my_seq.count("A")
 However, if you want to do more complicated things, like getting the reverse complement of the sequence, or translating it to amino acids, that is not straight forward and would require some code. Luckily, the Biopython package supports all this functionality and much more, making  
 
 
-**1. Import Biopython**
+## 2.2.1 Import Biopython
 
 Make a file called `biopython_test.py` where you will try out Biopython.
 
