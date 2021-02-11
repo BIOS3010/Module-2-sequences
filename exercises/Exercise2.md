@@ -30,7 +30,7 @@ Start by downloading the coding DNA sequence of all human genes in FASTA format:
 - Click `get sequence"`
 - Save the `all_genes.fasta` file in the current working directory (the `Module-2-sequences directory`) (! Warning: the file is 105.3 MB)
 
-To loop through all the genes and print the sequence (Seq object), 
+To loop through all the genes and print the sequence (Seq object) do this:
 
 ```python
 from Bio import SeqIO
@@ -41,6 +41,7 @@ for gene in all_genes:
     print(gene.id)
     print(gene.seq)
 ```
+
 ```diff
 + Note:
 + When importing libraries in Python, we usually put the import statement at the top of the file. 
@@ -49,8 +50,13 @@ for gene in all_genes:
 + An alternative way of importing is `import Bio`. This makes the `Seq`-class available through `Bio.Seq`.
 ```
 
-## 2.4.3 Using a text editor to create Pythons scripts
+## 2.4.3 Using a text editor to create Python scripts
 To work efficiently with Python, it is good to create scripts that store our commands and allow us to run them in the Terminal. A python script is simply a text file containing the commands/functions we need to run in the right order. When our python code becomes multiple lines, for-loops, and so on, it is better to store these as files. This will will do now.
+
+First, exit the interactive python session by using:
+```bash
+exit()
+```
 
 You may already be used to a particular text editor to create scripts. Feel free to use this, but if you are new to this you should use the [nano text editor](https://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/). This is a very simple text editor running inside our terminal.
 To open it, type the following into your Terminal (in Bash):
@@ -61,17 +67,27 @@ nano
 - Save the file (CTRL - Shift - O), choose filename 'printgenes.py'
 - Exit `nano` (CTRL - Shift - X)
 
-
-
 ```diff
-
-
-
-
-```diff
-! Expand the code above so that also the protein length (number of amino acids) of each gene is printed (you can skip printing the sequence in order to make the output more readable)
-! Calculate the average protein length (number of amino acids) of each gene
+! Use what we learned the last week to verify that `printgenes.py` contains the python script
 ```
+## 2.4.4 Running a python script from the terminal
+
+Run the python script like this:
+```python
+python printgenes.py
+```
+
+```diff
+! Use what we learned the last week to redirect the output into a file called `genes.txt`
+```
+
+## 2.4.4 Editing and expanding the python script
+Modify the python script by again opening it in your text editor (e.g. nano) and then:
+- Expand/change the code in `printgenes.py`, so that it outputs the gene-ID and the protein length on the same line. You can skip printing the sequence in order to make the output more readable
+
+```diff
+! Use what we learned the last week to find the id of the longest gene
+! And the shortest gene
 
 **3 Make a small tool that locates genes containing a specific sequence**
 We now want to make a small Python tool that lets the user search for genes that contain a spescific DNA sequence (pattern). For convenience, we want to be able to run this tool on the command line like this:
