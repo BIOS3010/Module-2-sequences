@@ -1,9 +1,8 @@
-## Exercise 2: Using Biopython
+# Exercise 2: Using Biopython
 
-In this exercise, you will use what you learned in the [introductory exercise](Exercise1.md) to analyse some real exercises. In the last exercise you will make a small tool that automatically fetches sequences from .
+In this exercise, you will use what you learned in the [introductory exercise](Exercise1.md) to analyse some real data.
 
-
-**1. Downloading some actual data (FASTA) and read it into a Seq object**
+## 2.4.1 Downloading some actual data (FASTA) and read it into a Seq object
 - Go to NCBI - Gene: https://www.ncbi.nlm.nih.gov/gene/
 - Search for the human beta globin gene (HBB)
 - Download the HBB gene in FASTA format and save it on your computer as "sequence.fasta"
@@ -19,9 +18,9 @@ hbb = seq_record.seq
 ! Compare with the amino acid sequence on NCBI, is this as expected?
 ! Advanced: Use python string slicing on `hbb` to explore the translation further
 ```
-**2. Reading a FASTA-file containing multiple sequences into Seq objects**
+## 2.4.2 Reading a FASTA-file containing multiple sequences into Seq objects
 
-Start by download the coding DNA sequence of all human genes in FASTA format:
+Start by downloading the coding DNA sequence of all human genes in FASTA format:
 
 - Go to the UCSC Table Browser: https://genome-euro.ucsc.edu/cgi-bin/hgTables?hgsid=250654185_KikUKaMDmiGmkTgDVb2wBpVbjc9K&clade=mammal&org=Human&db=hg19&hgta_group=genes&hgta_track=knownGene&hgta_table=knownGene&hgta_regionType=genome&position=chrX%3A15%2C578%2C261-15%2C621%2C068&hgta_outputType=sequence&hgta_outFileName=all_genes.fasta
 - Inspect the options that are selected
@@ -29,9 +28,9 @@ Start by download the coding DNA sequence of all human genes in FASTA format:
 - Select `Genomic` and click Submit`
 - Select only `CDS Exons` ("5' UTR Exons", "3' UTR Exons", and "Introns" should be unselected)
 - Click `get sequence"`
-- Save the `all_genes.fasta` file in your current working directory (Warning: the file is 105.3 MB)
+- Save the `all_genes.fasta` file in the current working directory (the `Module-2-sequences directory`) (! Warning: the file is 105.3 MB)
 
-To loop through all the genes and print the sequence (Seq object), one can do this:
+To loop through all the genes and print the sequence (Seq object), 
 
 ```python
 from Bio import SeqIO
@@ -42,6 +41,32 @@ for gene in all_genes:
     print(gene.id)
     print(gene.seq)
 ```
+```diff
++ Note:
++ When importing libraries in Python, we usually put the import statement at the top of the file. 
++ This makes what we have imported available in the whole file
++ The statement `from Bio.Seq import Seq` makes the `Seq` class available to us. 
++ An alternative way of importing is `import Bio`. This makes the `Seq`-class available through `Bio.Seq`.
+```
+
+## 2.4.3 Using a text editor to create Pythons scripts
+To work efficiently with Python, it is good to create scripts that store our commands and allow us to run them in the Terminal. A python script is simply a text file containing the commands/functions we need to run in the right order. When our python code becomes multiple lines, for-loops, and so on, it is better to store these as files. This will will do now.
+
+You may already be used to a particular text editor to create scripts. Feel free to use this, but if you are new to this you should use the [nano text editor](https://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/). This is a very simple text editor running inside our terminal.
+To open it, type the following into your Terminal (in Bash):
+```bash
+nano
+```
+- Paste in the python code from the previous step (**2.4.2**) into the text editor
+- Save the file (CTRL - Shift - O), choose filename 'printgenes.py'
+- Exit `nano` (CTRL - Shift - X)
+
+
+
+```diff
+
+
+
 
 ```diff
 ! Expand the code above so that also the protein length (number of amino acids) of each gene is printed (you can skip printing the sequence in order to make the output more readable)
