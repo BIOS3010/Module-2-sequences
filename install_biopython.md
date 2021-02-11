@@ -22,7 +22,11 @@ python3 -m pip install biopython
 
 ## 2.1.3 Opening an interacive python session
 We can interact with Python in our Terminal, just as we do with Bash (and in Python notebook).
-- Type `python3` (or `python`) on the terminal to go into an interactive python shell.
+Type `python3` (or `python`) on the terminal to go into an interactive python shell:
+
+```bash
+python3
+```
 
 ```diff
 + Note:
