@@ -81,30 +81,32 @@ python printgenes.py
 ! Use what we learned the last week to redirect the output into a file called `genes.txt`
 ```
 
-## 2.4.4 Editing and expanding the python script
-Modify the python script by again opening it in your text editor (e.g. nano) and then:
+## 2.4.5 Editing and expanding the python script
+Modify the Python script by again opening it in your text editor (e.g. nano) and then:
 - Expand/change the code in `printgenes.py`, so that it outputs the gene-ID and the protein length on the same line. You can skip printing the sequence in order to make the output more readable
 
 ```diff
 ! Use what we learned the last week to find the id of the longest gene
 ! And the shortest gene
+```
 
-**3 Make a small tool that locates genes containing a specific sequence**
+## 2.4.6 Make a small tool that locates genes containing a specific sequence**
 We now want to make a small Python tool that lets the user search for genes that contain a spescific DNA sequence (pattern). For convenience, we want to be able to run this tool on the command line like this:
 
 ```bash
 python3 find_genes.py ACTG
 ```
 
-* Make a new file `find_genes.py`  where you import SeqIo, read in all the genes and loop through them in the same way as in the previous exercise.
-* Add the following line at the top of the file `import sys`. This gives us access to `sys.argv` which is a list containing the arguments specified on the command line when running the python script.
-* You can read the first argument like this:
+- Make a new file `find_genes.py`  where you import SeqIo, read in all the genes and loop through them in the same way as in the previous exercise.
+- Add the following line at the top of the file `import sys`. This gives us access to `sys.argv` which is a list containing the arguments specified on the command line when running the python script.
+- You can read the first argument like this:
 ```python
 pattern = sys.argv[1]
 ```
 
 ```diff
 ! Modify your code so that only the id of genes containing the pattern specified by the user are printed
-! What happens if you run the program without specifying a pattern? Can you modify your code so that it doesn't crash but instead prints an error message to the user?
-! Also make sure that the tool prints the average length of the genes that contain the pattern. If no genes contain the pattern, print a descriptive message (e.g. "No genes found")
+! What happens if you run the program without specifying a pattern? 
+! Can you modify your code so that it doesn't crash but instead prints an error message to the user?
+! If no genes contain the pattern, print a descriptive message (e.g. "No genes found")
 ```
