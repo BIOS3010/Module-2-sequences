@@ -40,7 +40,7 @@ import Bio
 ```
 ```diff
 + Note:
-+ If no errors are shown, Bipython is installed. 
++ If no errors are shown, Bipython is installed correctly!
 ```
 
 ## 2.1.5 Interacting with Python in the terminal
