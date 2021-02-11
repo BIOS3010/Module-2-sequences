@@ -33,18 +33,34 @@ python3
 + the >>> symbols to the left, indicate that we are interacting with Python
 ```
 
-## 2.1.4 Interacting with Python in the terminal
+## 2.1.4 Testing the Biopython installation
 Type the following into the terminal
 ```python
 import Bio
 ```
 If no errors are shown, Bipython is installed. 
 
+## 2.1.5 Interacting with Python in the terminal
+Try out some simple Python commands, once you are inside the interactive Python session:
+```python
+1+1
+a = 1
+print("hei")
+```
+Feel free to try other commands as well
 
-## 2.1.X Exiting the interactive Python session:
+```diff
+! What is the difference between interacting with python and running commands in Bash?
+```
+
+## 2.1.6 Exiting the interactive Python session:
 Type `exit()` to leave the interactive python shell:
 ```python
 exit()
 ```
+```diff
++ Note that you are now back in the shell, and can run Bash commands again
+```
+
 
 
