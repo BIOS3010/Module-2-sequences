@@ -38,7 +38,10 @@ Type the following into the terminal
 ```python
 import Bio
 ```
-If no errors are shown, Bipython is installed. 
+```diff
++ Note:
++ If no errors are shown, Bipython is installed. 
+```
 
 ## 2.1.5 Interacting with Python in the terminal
 Try out some simple Python commands, once you are inside the interactive Python session:
