@@ -1,4 +1,4 @@
-### Install Biopython
+### Installing Biopython and using Python interactively
 
 The easiest way to install Biopython is to use the builtin Python package manageer (PiP).
 
