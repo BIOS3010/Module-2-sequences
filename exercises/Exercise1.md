@@ -13,23 +13,25 @@ length_of_sequence = len(my_seq)
 number_of_a = my_seq.count("A")
 ```
 
-However, if you want to do more complicated things, like getting the reverse complement of the sequence, or translating it to amino acids, that is not straight forward and would require some code. Luckily, the Biopython package supports all this functionality and much more, making  
+However, if you want to do more complicated things, like getting the reverse complement of the sequence, or translating it to amino acids, that is not straight forward and would require some code. Luckily, the Biopython package supports all this functionality and much more.
 
 
-## 2.2.1 Using a text editor to create Pythons scripts
-You may already be used to a particular text editor to create scripts. Feel free to use this
-
-Make a file called `biopython_test.py` where you will try out Biopython.
-
-In the top of the file, start by importing the `Seq` class from Biopython:
-
+## 2.3.1 Opening an interactive Python session
+As we did in the previous exercise, open Python interactively by running this in your Terminal:
+```python
+python3
+```
+## 2.3.2 Importing the Seq class from Biopython
+Type this in
 ```python
 from Bio.Seq import Seq
 ```
 
-A few notes:
-* When importing stuff in Python, we usually put the import statement at the top of the file. This makes what we have imported available in the whole file, and it makes it easy to get an overview of everything that is imported when all import statements are togheter at top of the file.
-* The statement `from Bio.Seq import Seq` makes the `Seq` class available to us. An alternative way of importing, that you may have seen is `import Bio`. That makes the `Seq`-class available through `Bio.Seq`.
+```diff
++ Note:
++ The statement `from Bio.Seq import Seq` makes the `Seq` class available to us. 
++ An alternative way of importing is `import Bio`. This makes the `Seq`-class available through `Bio.Seq`.
+```
 
 **3. Create Seq object**
 
