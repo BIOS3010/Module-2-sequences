@@ -12,9 +12,9 @@ cd Module-2-sequences
 ```
 This will go to the directory we created last week (`BIOS3010`). The `git clone` command downloads the exercises for today, and then we enter the directory called `Module-2-sequences`
 
-## 2.2 Installing Biopython
-* [Install Biopython](exercises/install_biopython.md)
-## 2.3
-* [Get started using Biopython (the basics)](exercises/Exercise1.md)
-## 2.4
-* [A more advanced exercise using Biopython](exercises/Exercise2.md)
+## 2.2 Installing Biopython and interacting with Python
+* Go to [these exercises](exercises/install_biopython.md), and follow the steps.
+## 2.3 Get started using Biopython (the basics)
+* Go to [these exercices](exercises/Exercise1.md), and follow the steps.
+## 2.4 A more advanced exercise using Biopython
+* Go to [these exercices](exercises/Exercise2.md), and follow the steps.
