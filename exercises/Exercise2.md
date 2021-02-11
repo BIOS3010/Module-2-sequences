@@ -90,8 +90,8 @@ Modify the Python script by again opening it in your text editor (e.g. nano) and
 ! And the shortest gene
 ```
 
-## 2.4.6 Make a small tool that locates genes containing a specific sequence
-We now want to make a small Python tool that lets the user search for genes that contain a spescific DNA sequence (pattern). For convenience, we want to be able to run this tool on the command line like this:
+## 2.4.6 Make a small Python script that locates genes containing a specific sequence
+We now want to make a small Python script that lets the user search for genes that contain a spescific DNA sequence (pattern). For convenience, we want to be able to run this tool on the command line like this:
 
 ```bash
 python3 find_genes.py ACTG
