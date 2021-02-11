@@ -22,7 +22,7 @@ As we did in the previous exercise, open Python interactively by running this in
 python3
 ```
 ## 2.3.2 Importing the Seq class from Biopython
-Type this in
+Type this in, to load the Seq class:
 ```python
 from Bio.Seq import Seq
 ```
@@ -33,8 +33,7 @@ from Bio.Seq import Seq
 + An alternative way of importing is `import Bio`. This makes the `Seq`-class available through `Bio.Seq`.
 ```
 
-**3. Create Seq object**
-
+## 2.3.3 Create Seq object
 Use the following code to create a new sequence object:
 ```python
 my_seq = Seq("AGTACACTGGT")
@@ -45,35 +44,40 @@ my_seq = Seq("AGTACACTGGT")
 ! Try to see if you manage to convert the Seq-object to a string (without reading any documentation). 
 ```
 
+## 2.3.4 .complement() and .reverse_complement()
 
-**3. .complement() and .reverse_complement() ...**
-
-By calling the `complement()` or `reverse_complement()` methods on the Seq-object, we can get the complement or reverse complement of a sequence:
+By calling the `complement()` or `reverse_complement()` methods on the Seq-object, we can get the complement or reverse complement of a sequence. Excute the following two lines of Python code:
 ```python
 my_seq_complement = my_seq.complement()
 my_seq_reverse_complement = my_seq.reverse_complement()
 ```
 ```diff
-! Run the code above and also print the two new sequence `my_seq_complement` and `my_seq_reverse_complement`. Is the result as expected?
+! Print the two new sequences `my_seq_complement` and `my_seq_reverse_complement`. Is the result as expected?
 ! Is the original variable `my_seq` changed in any way? 
-! Refer back to the lecture slides if you have forgotten about (reverse) complementarity
+```
+```diff
++ Note:
++ Refer back to the lecture slides if you have forgotten about (reverse) complementarity
 ```
 
-- Compare with what we learned in class
+## 2.3.5 .find() to search for sequences
 
-**4. .find() to search for sequences**
-
-Bipython also makes it easy to find a subsequence within a sequence by using the `find`-method. This method takes one argument (the subsequence to be found).
+Biopython also makes it easy to find a subsequence within a sequence by using the `find`-method. This method takes one argument (the subsequence to be found).
+Do the following
+- Define a new `Seq` object (you can choose what the sequence should be)
+- Use the `.find()` method to find the location of a subsequence in the sequence. 
+- Store the result in a variable and print that variable to see the location of the subsequence
 
 ```diff
-! Defining a new Biopython sequence (you can choose what the sequence should be)
-! Use the `find()` method to find the location of a subsequence. Remember that you use methods on the sequence object by using the `some_sequence.some_method()`-notation. Store the result in a variable and print that variable to see the location.
++ Note:
++ Remember that you use methods on the sequence object by using the `some_sequence.some_method()`-notation. 
+```
+
+```diff
 ! What happens if the subsequence you try to find does not exist in the sequence?
 ! What happens if the subsequence exists multiple times?
 ```
-
-
-**5. Other methods**
+## 2.3.6 Testing other functionality in Seq objects
 
 In addition to the methods introduced above, the Seq-object has other methods that can be used:
 * `sequence.count(subsequence)`: Returns the number of times subsequence occurs in the sequence
@@ -84,8 +88,5 @@ In addition to the methods introduced above, the Seq-object has other methods th
 ! Play around with these methods to see how they work
 ! What happens if you try to transcribe an RNA sequence or translate a DNA sequence?
 ```
-
-**X. Working with FASTA format with SeqIO**
-
 
 Go to the [next exercise](Exercise2.md)
