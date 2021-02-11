@@ -1,7 +1,7 @@
 # Module 2 - Sequences
 
 In this module, we will use Python and the [Biopython](https://biopython.org/) package to represent and analyse DNA sequences.
-### 2.1 Setup today's exercises
+## 2.1 Setup today's exercises
 In the exercises last week, Windows-users installed the Gitbash terminal application. Mac (and Linux) users already have a Terminal application installed in their systems.
 
 Open your Terminal application (Gitbash for Windows users) and copy-paste the following:
