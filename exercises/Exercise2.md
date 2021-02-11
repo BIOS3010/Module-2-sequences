@@ -1,6 +1,6 @@
 ## Exercise 2: Using Biopython
 
-In this exercise, you will use what you learned in the [introctory exercise](Exercise1.md) to analyse some real exercises. In the last exercise you will make a small tool that automatically fetches sequences from .
+In this exercise, you will use what you learned in the [introductory exercise](Exercise1.md) to analyse some real exercises. In the last exercise you will make a small tool that automatically fetches sequences from .
 
 
 **1. Downloading some actual data (FASTA) and read it into a Seq object**
