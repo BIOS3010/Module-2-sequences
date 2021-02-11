@@ -1,5 +1,5 @@
-# Module-2-sequences
-In this exercise, you will get to know how to represent and operate on DNA sequences using Biopython. In the [next exercise](Exercise2.md)
+# Working with DNA sequences using Biopython
+In this exercise, you will get to know how to represent and operate on DNA sequences using Biopython. In the next exerise
 you will use what you learn here on a bigger problem.
 
 #### Representing a DNA sequence as a Python string vs. using Biopython
@@ -16,7 +16,8 @@ number_of_a = my_seq.count("A")
 However, if you want to do more complicated things, like getting the reverse complement of the sequence, or translating it to amino acids, that is not straight forward and would require some code. Luckily, the Biopython package supports all this functionality and much more, making  
 
 
-## 2.2.1 Import Biopython
+## 2.2.1 Using a text editor to create Pythons scripts
+You may already be used to a particular text editor to create scripts. Feel free to use this
 
 Make a file called `biopython_test.py` where you will try out Biopython.
 
@@ -84,3 +85,5 @@ In addition to the methods introduced above, the Seq-object has other methods th
 
 **X. Working with FASTA format with SeqIO**
 
+
+Go to the [next exercise](Exercise2.md)
