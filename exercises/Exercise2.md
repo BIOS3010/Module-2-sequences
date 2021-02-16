@@ -6,7 +6,7 @@ In this exercise, you will use what you learned in the [introductory exercise](E
 - Go to NCBI - Gene: https://www.ncbi.nlm.nih.gov/gene/
 - Search for the human beta globin gene (HBB)
 - Download the HBB gene in FASTA format and save it on your computer as "sequence.fasta"
-- Load this FASTA file into a Seq object called `hbb`. This can be done by using the SeqIO module in Biopython. This module has a function `read` that takes two arguments, a file name and a file type (in our case "fasta"):
+- Load this FASTA file into a Seq object called `hbb`. This can be done by using the SeqIO module in Biopython. This module has a method `read` that takes two arguments, a file name and a file type (in our case "fasta"):
 ```python
 from Bio import SeqIO
 seq_record = SeqIO.read("sequence.fasta", "fasta")
