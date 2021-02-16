@@ -90,14 +90,14 @@ Modify the Python script by again opening it in your text editor (e.g. nano) and
 ! And the shortest gene
 ```
 
-## 2.4.6 Make a small Python script that locates genes containing a specific sequence
+## Advanced: 2.4.6 Make a small Python script that locates genes containing a specific sequence
 We now want to make a small Python script that lets the user search for genes that contain a spescific DNA sequence (pattern). For convenience, we want to be able to run this tool on the command line like this:
 
 ```bash
 python3 find_genes.py ACTG
 ```
 
-- Make a new file `find_genes.py`  where you import SeqIo, read in all the genes and loop through them in the same way as in the previous exercise.
+- Make a new file `find_genes.py`  where you import `SeqIO`, read in all the genes and loop through them in the same way as in the previous exercise.
 - Add the following line at the top of the file `import sys`. This gives us access to `sys.argv` which is a list containing the arguments specified on the command line when running the python script.
 - You can read the first argument like this:
 ```python
