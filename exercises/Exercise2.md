@@ -5,7 +5,7 @@ In this exercise, you will use what you learned in the [introductory exercise](E
 ## 2.4.1 Downloading some actual data (FASTA) and read it into a Seq object
 - Go to NCBI - Gene: https://www.ncbi.nlm.nih.gov/gene/
 - Search for the human beta globin gene (HBB)
-- Download the HBB gene in FASTA format and save it on your computer. Name the file as `sequence.fasta` on your computer
+- Download the HBB gene in FASTA format and save it on your computer. Name the file as `sequence.fasta` on your computer. Important: Save the file in the same directory that you do these exercises.
 - Load this FASTA file into a Seq object called `hbb`. This can be done by using the SeqIO module in Biopython. This module has a method `read` that takes two arguments, a file name and a file type (in our case "fasta"):
 ```python
 from Bio import SeqIO
@@ -18,6 +18,9 @@ hbb = seq_record.seq
 ! Compare with the amino acid sequence on NCBI, is this as expected?
 ! Advanced: Use python string slicing on `hbb` to explore the translation further
 ```
+
+NB: If you get a FileNotFound error message, this means that sequences.fasta cannot be found. Make sure there is a file sequences.fasta in the same directory that you are now running python.
+
 ## 2.4.2 Reading a FASTA-file containing multiple sequences into Seq objects
 
 Start by downloading the coding DNA sequence of all human genes in FASTA format:
@@ -41,6 +44,7 @@ for gene in all_genes:
     print(gene.id)
     print(gene.seq)
 ```
+If you find it difficult writing a for-loop in the interactive Python shell, you can jump to the next exercise and create a Python file and write your code in that file instead.
 
 ```diff
 + Note:
@@ -76,9 +80,11 @@ Run the python script like this:
 ```python
 python3 printgenes.py
 ```
+(You may have to use `python printgenes.py` on your computer if the python3 command is not available)
 
 ```diff
 ! Use what we learned the last week to redirect the output into a file called `genes.txt`
+! Check using head or tail that the file genes.txt has some content in it.
 ```
 
 ## 2.4.5 Editing and expanding the python script
@@ -86,7 +92,7 @@ Modify the Python script by again opening it in your text editor (e.g. nano) and
 - Expand/change the code in `printgenes.py`, so that it outputs the gene-ID and the protein length on the same line. You can skip printing the sequence in order to make the output more readable
 
 ```diff
-! Use what we learned the last week to find the id of the longest gene
+! Write code to find the id of the longest gene
 ! And the shortest gene
 ```
 
