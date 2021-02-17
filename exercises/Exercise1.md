@@ -21,6 +21,10 @@ As we did in the previous exercise, open Python interactively by running this in
 ```python
 python3
 ```
+
+Note: On some computers (often Windows), the command will be `python` and not `python3` (Python version 3 is still used).
+
+
 ## 2.3.2 Importing the Seq class from Biopython
 Type this in, to load the Seq class:
 ```python
